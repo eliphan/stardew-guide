@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require_relative '../lib/stardew_start_guide'
+
+require "irb"
+s = StardewStartGuide::Scraper.new
+s.make_villagers
+IRB.start
